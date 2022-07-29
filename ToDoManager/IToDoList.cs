@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace ToDoManager
 {
-    internal interface IToDo
+    internal interface IToDoList
     {
+        List<string> Create();
+
+        List<string> Postpone();
+        List<string> Delete();
+
     }
 }
